@@ -148,7 +148,7 @@ Protecting complex data structures
 If you wish to protect a list, tuple or dictionary you can do so using the
 signing module's ``dumps`` and ``loads`` functions. These imitate Python's
 pickle module, but use JSON serialization under the hood. JSON ensures that
-even if your :setting:`SECRET_KEY` is stolen an attacker will not be able
+even if your :setting:`SECRET_KEY` is stolen, an attacker will not be able
 to execute arbitrary commands by exploiting the pickle format::
 
     >>> from django.core import signing
